@@ -18,6 +18,30 @@ I don't have experience in IT. My goal is to gain knowledge in the field of fron
 * Saint Petersburg Marine Technical College
 * Saint Petersburg State Forest Technical University
 
+## Code examples 
+```
+function getArrayParams(arr) {
+  let min, max, sum, avg;
+  
+    min = -Infinity;
+    max = Infinity;
+    sum = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+      
+      min = Math.min(...arr)
+      max = Math.max(...arr)
+      
+      sum += arr[i];    
+      let interm = sum / arr.length;
+      avg = +interm.toFixed(2);
+    }
+    
+  
+    return {min: min, max: max, avg: avg};
+}
+```
+
 ## Languages
 * Russian - native speaker
 * English - А2 -> B1
