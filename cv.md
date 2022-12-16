@@ -4,15 +4,16 @@
 * Phone: +7 905 265-76-20
 * E-mail: ruslan-fedotov@inbox.ru
 * GitHub: https://github.com/VeloRus
-* CodePen: https://codepen.io/VseRu
 
-## About Me
-I don't have experience in IT. My goal is to gain knowledge in the field of front-end development.
+## About me
+I don't have experience in IT.I want to get knowledge and skills that will be enough for employment in a company. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
 
 ## Skills
 * HTML
 * CSS
 * JavaScript
+* Github
+* Figma
 
 ## Education
 * Saint Petersburg Marine Technical College
@@ -20,25 +21,12 @@ I don't have experience in IT. My goal is to gain knowledge in the field of fron
 
 ## Code examples 
 ```
-function getArrayParams(arr) {
-  let min, max, sum, avg;
-  
-    min = -Infinity;
-    max = Infinity;
-    sum = 0;
-    
-    for (let i = 0; i < arr.length; i++) {
-      
-      min = Math.min(...arr)
-      max = Math.max(...arr)
-      
-      sum += arr[i];    
-      let interm = sum / arr.length;
-      avg = +interm.toFixed(2);
-    }
-    
-  
-    return {min: min, max: max, avg: avg};
+function sum(...arg) {
+  let sum = 0;
+  for (let num of arg) { 
+   sum += num; 
+   }
+   return sum;
 }
 ```
 
