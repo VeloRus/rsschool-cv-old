@@ -169,16 +169,15 @@
     color: #1430a7;
   }
 
-  .logo-github {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url(assets/img/GH-icon.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+  .github-link {
+    color:  #000000;
   }
- 
+
+  .github-link:hover {
+    color: #dcdfeb;
+  }
+
+   
   .logo-rsschool {
     display: block;
     width: 130px;
