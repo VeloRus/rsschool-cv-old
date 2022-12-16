@@ -1,5 +1,227 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/Open_Sans/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/Open_Sans/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url(/assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --link-color: #ffffff;
+  --contact-link: #404b25:
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  a,
+  ul,
+  li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #000000;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 400px;
+  }
+
+  .header-container {
+    background-color: #7a7a7a;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-item {
+    padding: 20px 10px;
+  }
+
+  .nav-link {
+    color: var(--link-color);
+  }
+
+  .nav-link:hover {
+    color: #1430a7;
+  }
+
+  .main-container {
+    display: flex;
+    Justify-content: center;
+  }
+
+  .additional-information {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 20px;
+    background-color: #dbdbdb;
+  }
+  
+  .profile-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .profile-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #846d3b;
+  }
+
+  .main-information {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 20px;
+    background-color: #e7e7e7;
+  }
+
+  .profile-foto {
+    width: 98%;
+    border-radius: 50%;
+  }
+
+  .section {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+  }
+
+  .education-link {
+    font-weight: 700;
+    color: var( --contact-link); 
+  }
+
+  .education-link:hover {
+    color: #909289 ;
+  }
+
+  .contacts-link {
+    font-weight: 700;
+    color: var( --contact-link); 
+  }
+
+  .contacts-link:hover {
+    color: #909289 ;
+  }
+
+  .code-area {
+    background-color: #ffffff;
+  }
+
+  .code-examples {
+    position: relative;
+    right: 160px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7a7a7a;
+    padding: 10px;
+  }
+
+  .copyright-link {
+    color: var(--link-color);
+  }
+
+  .copyright-link:hover {
+    color: #1430a7;
+  }
+
+  .logo-github {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(file:///C:/Users/rusla/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/RS%20school/rsschool-cv/assets/img/github_icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+ 
+  .logo-rsschool {
+    display: block;
+    width: 130px;
+    height: 50px;
+    background-image: url(assets/img/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-foto {
+    width: 98%;
+    border-radius: 50%;
+  
+  }
+ 
+  .additional-information {
+    width: 100%;
+  }
+
+   .main-information {
+     width: 100%;
+  }
+  
+  .nav-item {
+    padding: 5px 10px;
+  }
+  
+  .logo-rsschool {
+    width: 80px;
+    height: 30px;
+  }
+
+  .logo-github {
+    width: 30px;
+    height: 30px;
+  }
+}
