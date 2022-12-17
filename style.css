@@ -41,7 +41,6 @@
     min-height: 100vh;
     background-color: #000000;
     font-family: "OpenSans", "Arial", sans-serif;
-    font-size: 2rem;
     font-weight: 400;
     line-height: 1.5;
     
@@ -156,7 +155,6 @@
   .footer-list {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
     align-items: center;
     background-color: #7a7a7a;
     padding: 10px;
