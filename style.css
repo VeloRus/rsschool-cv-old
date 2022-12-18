@@ -41,6 +41,7 @@
     min-height: 100vh;
     background-color: #000000;
     font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
   }
@@ -148,7 +149,7 @@
 
   .code-examples {
     position: relative;
-    right: 380px;
+    right: 165px;
   }
 
   .footer-list {
